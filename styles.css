@@ -1104,7 +1104,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 /* ─── LINES GRID ─── */
 .lines-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 .line-card {
