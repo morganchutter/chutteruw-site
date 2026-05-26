@@ -1,0 +1,7 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.log
+
+# Local preview server deps (none needed — serve.cjs is plain Node)
+node_modules/
