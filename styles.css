@@ -1256,7 +1256,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   transform: translateY(-2px);
 }
 .why-number {
-  display: inline-block;
+  display: none;
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
