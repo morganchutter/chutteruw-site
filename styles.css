@@ -1177,6 +1177,40 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   box-shadow: 0 0 40px var(--brand-glow-soft);
   background: rgba(16,40,73,.78);
 }
+/* Expertise highlight callout inside an expanded line card */
+.detail-highlight {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px 18px;
+  margin-bottom: 22px;
+  background: rgba(46,164,123,.08);
+  border: 1px solid rgba(46,164,123,.28);
+  border-radius: 12px;
+}
+.detail-highlight-icon {
+  flex-shrink: 0;
+  width: 34px; height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(46,164,123,.16);
+  color: var(--brand);
+  border-radius: 9px;
+}
+.detail-highlight-text strong {
+  display: block;
+  font-size: .95rem;
+  color: var(--foreground);
+  margin-bottom: 4px;
+  letter-spacing: -.005em;
+}
+.detail-highlight-text span {
+  font-size: .85rem;
+  color: var(--muted-strong);
+  line-height: 1.6;
+}
+
 .detail-cols {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
