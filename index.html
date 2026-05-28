@@ -535,8 +535,7 @@
             </a>
           </div>
         </div>
-        <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
-          <input type="hidden" name="form-name" value="contact" />
+        <form class="contact-form" method="POST" action="/.netlify/functions/submit-form" onsubmit="handleSubmit(event)">
           <p class="visually-hidden"><label>Don&rsquo;t fill this out if you&rsquo;re human: <input name="bot-field" /></label></p>
           <div class="form-row">
             <div class="form-group">
@@ -679,7 +678,7 @@
       }
     }
 
-    // Form submission — posts to Netlify Forms, shows inline feedback
+    // Form submission — posts to the Netlify Function that routes the email
     function handleSubmit(e) {
       e.preventDefault();
       const form = e.target;
@@ -690,9 +689,14 @@
       btn.style.opacity = '0.7';
       const data = new FormData(form);
       const body = new URLSearchParams(data).toString();
-      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body })
-        .then(r => {
-          if (!r.ok) throw new Error('Network error');
+      fetch('/.netlify/functions/submit-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
+      })
+        .then(async r => {
+          const j = await r.json().catch(() => ({}));
+          if (!r.ok) throw new Error(j.error || 'Network error');
           btn.textContent = 'Message received!';
           form.reset();
         })

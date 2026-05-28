@@ -1,0 +1,9 @@
+{
+  "name": "chutteruw-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chutter Underwriting Services — marketing site",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}
