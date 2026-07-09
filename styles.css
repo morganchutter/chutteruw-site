@@ -325,6 +325,31 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   color: var(--brand);
   transform: translateY(-50%) translateX(3px);
 }
+
+/* Featured Mako quick-box — spans the full grid width */
+.quick-box-mako {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(46,164,123,.14), rgba(16,40,73,.6) 60%);
+  border-color: rgba(46,164,123,.38);
+}
+.quick-box-mako:hover {
+  border-color: var(--brand);
+  background: linear-gradient(135deg, rgba(46,164,123,.20), rgba(16,40,73,.8) 60%);
+  box-shadow: 0 0 26px var(--brand-glow-soft);
+}
+.quick-new {
+  display: inline-block;
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand-500), var(--brand-600));
+  border-radius: 999px;
+  padding: 2px 9px;
+  margin-left: 8px;
+  vertical-align: 2px;
+}
 .hero-stats {
   display: flex;
   gap: 32px;
