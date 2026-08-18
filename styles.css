@@ -1100,6 +1100,43 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   color: var(--brand);
 }
 
+/* Email-to-quote channel callout inside the mako band */
+.mako-channel {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 26px;
+  padding: 14px 18px;
+  max-width: 620px;
+  background: rgba(46,164,123,.07);
+  border: 1px dashed rgba(46,164,123,.32);
+  border-radius: 10px;
+}
+.mako-channel-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; height: 30px;
+  border-radius: 8px;
+  background: rgba(46,164,123,.14);
+  color: var(--brand);
+}
+.mako-channel-text {
+  font-size: .87rem;
+  color: var(--muted-strong);
+  line-height: 1.6;
+}
+.mako-channel-text strong { color: var(--foreground); font-weight: 600; }
+.mako-channel-text a {
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.mako-channel-text a:hover { color: var(--brand-500); }
+
 .mako-features {
   position: relative;
   z-index: 1;
@@ -1654,6 +1691,13 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 .why-card.fade-up:nth-child(4) { transition-delay: .3s; }
 .why-card.fade-up:nth-child(5) { transition-delay: .4s; }
 .why-card.fade-up:nth-child(6) { transition-delay: .5s; }
+
+/* Grid children must be allowed to shrink below their content's min-width,
+   otherwise long copy forces columns wider than the viewport (mobile h-scroll). */
+.lines-grid > *, .webquote-grid > *, .why-grid > *, .team-grid > *,
+.detail-cols > *, .app-grid > *, .cov-grid > *, .spec-grid > *,
+.excl-list > *, .check-grid > *, .hl-grid > *, .example-grid > *,
+.hero-quick-grid > *, .mako-features > * { min-width: 0; }
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 1024px) {
