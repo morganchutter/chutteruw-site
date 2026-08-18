@@ -1102,9 +1102,10 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 
 /* Email-to-quote channel walkthrough inside the mako band */
 .mako-channel {
-  margin-top: 26px;
-  padding: 18px 20px 16px;
-  max-width: 640px;
+  position: relative;
+  z-index: 1;
+  margin-top: 34px;
+  padding: 20px 22px 18px;
   background: rgba(46,164,123,.07);
   border: 1px dashed rgba(46,164,123,.32);
   border-radius: 12px;
@@ -1145,9 +1146,9 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px 28px;
 }
 .mako-channel-steps li {
   display: flex;
@@ -1245,6 +1246,8 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   .mako-feature:first-child { padding-top: 14px; }
   .mako-feature:last-child { padding-bottom: 0; }
   .mako-feature + .mako-feature { border-left: none; border-top: 1px solid rgba(42,77,119,.35); }
+  .mako-channel { padding: 16px 16px 14px; margin-top: 26px; }
+  .mako-channel-steps { grid-template-columns: 1fr; gap: 13px; }
 }
 
 /* Nav-mako accent — make the Mako Ai link feel slightly highlighted */
