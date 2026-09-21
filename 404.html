@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | Chutter Underwriting Services</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css?v=2" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="logo">
+        <img src="/logo-white.png" alt="Chutter Underwriting Services" width="1500" height="464" class="logo-img logo-white" />
+        <img src="/logo-colour.png" alt="Chutter Underwriting Services" width="1500" height="464" class="logo-img logo-colour" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#mako" class="nav-mako">Mako</a></li>
+        <li><a href="/#products">Products</a></li>
+        <li><a href="/applications.html">Applications</a></li>
+        <li><a href="/#team">Team</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <a href="/#contact" class="btn btn-primary nav-cta">Submit a Risk</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="hero-bg"></div>
+    <div class="container page-hero-content">
+      <p class="hero-tag">404</p>
+      <h1>This page has <span class="accent-grad">moved.</span></h1>
+      <p class="hero-sub">We rebuilt our site and some old links no longer exist. Everything is still here: our products, application forms, Mako, and the underwriting team.</p>
+      <div class="hero-actions">
+        <a href="/" class="btn btn-primary btn-lg">Go to the home page</a>
+        <a href="/applications.html" class="btn btn-outline btn-lg">Application forms</a>
+      </div>
+      <div class="hero-actions">
+        <a href="/#products" class="btn btn-outline">Products</a>
+        <a href="/mako.html" class="btn btn-outline">Mako</a>
+        <a href="/#contact" class="btn btn-outline">Contact us</a>
+      </div>
+    </div>
+  </header>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <img src="/logo-white.png" alt="Chutter Underwriting Services" width="1500" height="464" class="logo-img" />
+        </a>
+        <p class="footer-tagline">Commercial insurance for risks that don&rsquo;t fit a box. An independent Canadian MGA serving brokers nationwide.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>Toll-Free: 1-888-382-6697</p>
+          <p>#420 &ndash; 321 Water Street</p>
+          <p>Vancouver, BC V6B 1B8</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chutter Underwriting Services. A Canadian MGA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 40));
+    const toggle = document.getElementById('mobileToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { links.classList.toggle('open'); toggle.classList.toggle('open'); });
+  </script>
+</body>
+</html>

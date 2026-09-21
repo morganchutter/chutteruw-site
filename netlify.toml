@@ -35,3 +35,156 @@
   for = "/*.png"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+# Old Wix and pre-Wix (.aspx) URLs that Google still has indexed. 301s pass
+# their ranking to the matching page on this site instead of dropping it on a 404.
+# force = true where Netlify's pretty-URL lookup would otherwise serve a
+# duplicate of the .html page at the extensionless path.
+[[redirects]]
+  from = "/applications"
+  to = "/applications.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/copy-of-applications"
+  to = "/applications.html"
+  status = 301
+[[redirects]]
+  from = "/rented-condo"
+  to = "/rented-condo.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/water-damage-deductible"
+  to = "/water-damage-deductible.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/reporting-a-water-damage-deductible"
+  to = "/water-damage-deductible.html"
+  status = 301
+[[redirects]]
+  from = "/excess-loss-eligibility"
+  to = "/excess-loss-brochure.html"
+  status = 301
+[[redirects]]
+  from = "/office-package"
+  to = "/office-package.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/usli-web-quoting"
+  to = "/usli-web-quoting.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/hot-roofing-insurance"
+  to = "/hot-roofing-insurance.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/mako"
+  to = "/mako.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/web-quote"
+  to = "/#online-quoting"
+  status = 301
+[[redirects]]
+  from = "/about-us"
+  to = "/#about"
+  status = 301
+[[redirects]]
+  from = "/prods"
+  to = "/#products"
+  status = 301
+[[redirects]]
+  from = "/products"
+  to = "/#products"
+  status = 301
+[[redirects]]
+  from = "/cgl"
+  to = "/#products"
+  status = 301
+[[redirects]]
+  from = "/property"
+  to = "/#products"
+  status = 301
+[[redirects]]
+  from = "/e-o"
+  to = "/#products"
+  status = 301
+[[redirects]]
+  from = "/claims"
+  to = "/#claims"
+  status = 301
+[[redirects]]
+  from = "/careers"
+  to = "/#careers"
+  status = 301
+[[redirects]]
+  from = "/current-opportunities"
+  to = "/#careers"
+  status = 301
+[[redirects]]
+  from = "/contact-us"
+  to = "/#contact"
+  status = 301
+[[redirects]]
+  from = "/contact-property"
+  to = "/#contact"
+  status = 301
+[[redirects]]
+  from = "/Default.aspx"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/Home.aspx"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/AboutUs.aspx"
+  to = "/#about"
+  status = 301
+[[redirects]]
+  from = "/Products.aspx"
+  to = "/#products"
+  status = 301
+[[redirects]]
+  from = "/CGLHighlights.aspx"
+  to = "/#products"
+  status = 301
+[[redirects]]
+  from = "/Applications.aspx"
+  to = "/applications.html"
+  status = 301
+[[redirects]]
+  from = "/Contact.aspx"
+  to = "/#contact"
+  status = 301
+[[redirects]]
+  from = "/Articles.aspx"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/Charities.aspx"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/Links.aspx"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/Statistics.aspx"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/Testimonials.aspx"
+  to = "/"
+  status = 301
+# Wix-hosted PDFs (old application forms). Current versions live on the applications page.
+[[redirects]]
+  from = "/_files/*"
+  to = "/applications.html"
+  status = 301
