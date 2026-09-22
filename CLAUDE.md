@@ -74,6 +74,7 @@ routes by the Department field:
 | Professional Indemnity | specialty@chutteruw.com |
 | Claims | claims@chutteruw.com |
 | Accounting | accounting@chutteruw.com |
+| Mako | liability@chutteruw.com |
 | General Inquiry | info@chutteruw.com |
 
 Credentials live **only** in Netlify environment variables, never in the repo:
@@ -81,9 +82,6 @@ Credentials live **only** in Netlify environment variables, never in the repo:
 password). **Environment variable changes need a redeploy to take effect** —
 an empty commit is enough. A missing redeploy shows up as
 "Missing credentials for LOGIN" in the function log.
-
-**Open item:** the form offers a **Mako** department that is not in the `ROUTING`
-map, so it silently falls back to `info@`. Either add it or drop the option.
 
 ## Caching — read this before debugging "the change didn't happen"
 
@@ -143,10 +141,12 @@ Still needs Morgan, both worth more than anything left in the code:
 2. **Google Business Profile** — old Google listings still say "North Vancouver".
    The address is #420 - 321 Water Street, Vancouver BC V6B 1B8.
 
-## Privacy policy — unresolved, handle carefully
+## Privacy policy — link removed 2026-09-22, handle carefully
 
-Every page footer links to a Privacy Policy PDF that lived on Wix. That URL now
-404s, and the `/_files/*` redirect sends it to the applications page.
+Page footers used to link a Privacy Policy PDF that lived on Wix. The URL 404s
+(the `/_files/*` redirect sends it to the applications page), so the link was
+removed from every footer on 2026-09-22 per Morgan. The site currently has no
+privacy page.
 
 **Do not restore the original PDF.** It is not a privacy policy. It is an
 internal data-security procedure that names the alarm company and after-hours
@@ -155,9 +155,8 @@ a 7-character password rule. It was publicly exposed on the Wix site; the 404 is
 the safer state. A copy can be pulled from the Wayback Machine if ever needed
 for internal reference.
 
-Open decision for Morgan: draft a real public privacy page (the PIPEDA policy
-written for Mako is a reasonable starting point, and it is legal text so it
-needs his review), or remove the footer link.
+If a public privacy page is wanted later, the PIPEDA policy written for Mako is
+a reasonable starting point; it is legal text so it needs Morgan's review.
 
 ## Application PDFs
 

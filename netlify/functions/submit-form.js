@@ -13,6 +13,7 @@ const ROUTING = {
   'Professional Indemnity': 'specialty@chutteruw.com',
   'Claims':                 'claims@chutteruw.com',
   'Accounting':             'accounting@chutteruw.com',
+  'Mako':                   'liability@chutteruw.com',
   'General Inquiry':        'info@chutteruw.com',
 };
 
