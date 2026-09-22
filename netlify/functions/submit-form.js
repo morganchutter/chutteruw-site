@@ -14,10 +14,10 @@ const ROUTING = {
   'Claims':                 'claims@chutteruw.com',
   'Accounting':             'accounting@chutteruw.com',
   'Mako':                   'liability@chutteruw.com',
-  'General Inquiry':        'info@chutteruw.com',
+  'General Inquiry':        'liability@chutteruw.com',
 };
 
-const DEFAULT_INBOX = 'info@chutteruw.com';
+const DEFAULT_INBOX = 'liability@chutteruw.com';
 
 exports.handler = async (event) => {
   // Only allow POST

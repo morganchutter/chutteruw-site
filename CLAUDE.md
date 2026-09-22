@@ -75,7 +75,7 @@ routes by the Department field:
 | Claims | claims@chutteruw.com |
 | Accounting | accounting@chutteruw.com |
 | Mako | liability@chutteruw.com |
-| General Inquiry | info@chutteruw.com |
+| General Inquiry | liability@chutteruw.com |
 
 Credentials live **only** in Netlify environment variables, never in the repo:
 `M365_USER` and `M365_PASSWORD` (an M365 **app password**, not the account
