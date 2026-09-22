@@ -110,6 +110,13 @@ before editing anything. The file on the server has usually been correct.
   There is a shared rule covering the known grids near the responsive section.
 - Theme tokens live in `:root` in `styles.css`. Use them, do not hardcode colours.
 - Check mobile at 375px after layout changes. The site must not scroll horizontally.
+- Netlify's Pretty URLs post-processing rewrites internal links in the served
+  HTML (`href="foo.html#x"` becomes `href='/foo#x'`, single quotes). When
+  verifying a deploy with curl, grep for the link text or the path stem, not
+  the exact markup in the repo.
+- The old Wix-hosted `/_files/ugd/*.pdf` links were all removed 2026-09-22 (the
+  redirect sent them to the applications page). The condo pages now carry the
+  information inline; do not link PDFs that are not in this repo.
 - Screenshots of the preview pane fail often. Verifying through JS or DOM checks
   (`getBoundingClientRect`, `getComputedStyle`, `fetch` status) is faster and
   more reliable than fighting the screenshot tool.
