@@ -140,13 +140,27 @@ Done and live:
   logo `width`/`height` to prevent layout shift, internal links to `/` rather
   than a duplicate `/index.html`.
 
-Still needs Morgan, both worth more than anything left in the code:
+Done 2026-09-22 (driven through Morgan's Chrome, Google account
+morgan.chutter@gmail.com):
 
-1. **Google Search Console** — verify with a new DNS TXT record at Wix, submit
-   the sitemap, then request re-crawl so the redirects get picked up in days
-   instead of weeks. It also reports which URLs are still 404ing.
-2. **Google Business Profile** — old Google listings still say "North Vancouver".
-   The address is #420 - 321 Water Street, Vancouver BC V6B 1B8.
+- **Google Search Console**: domain property `sc-domain:chutteruw.com`,
+  verified via a TXT record at Wix
+  (`google-site-verification=o5qSpRCfq5t1sy_hsKSlksgY8M5Tk93-zFywOlcAKOI`, root,
+  TTL 1h). **Do not delete that TXT record** or the property loses
+  verification. `https://www.chutteruw.com/sitemap.xml` submitted (9 pages
+  discovered). The property also still lists the 2016 Wix-era
+  `http://www.chutteruw.com/sitemap.xml` submission; harmless, left in place.
+  Check Indexing > Pages there for URLs still 404ing.
+- **Google Business Profile**: already correct and verified at
+  321 Water Street, 420, Vancouver, BC V6B 1B8. Nothing was changed. Any
+  "North Vancouver" listing seen elsewhere is a third-party directory, not
+  Google's.
+
+Wix DNS panel gotcha: the domains page renders in a same-origin iframe and
+"Manage DNS records" is a button that navigates the iframe to
+`/my-domains/dns`; the direct `manage.wix.com/account/domains/<domain>/dns`
+style URLs 404. Save via the row's Save button; the record is live at
+`ns14/ns15.wixdns.net` within seconds.
 
 ## Privacy policy — link removed 2026-09-22, handle carefully
 
