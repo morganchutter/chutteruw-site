@@ -158,7 +158,8 @@ morgan.chutter@gmail.com):
 
 Other TXT records at the root that must stay (2026-09-25):
 `anthropic-domain-verification-6xkwgs=E1Me7ZoLOZl4irtvFJEeUpf29` verifies
-chutteruw.com for the Chutter Claude Team organization (claude.ai admin
+chutteruw.com for the Chutter Claude Team organization (status Verified,
+2026-09-25, took about an hour to flip after the record went in) (claude.ai admin
 settings > Organization and access > Domains; the verification page itself is
 hosted at setup.workos.com and reached via the "Verify a domain" button).
 Note the lowercase L in `OZl4`; reading it off a screenshot gets it wrong.
@@ -221,7 +222,8 @@ reverts it.
   headline "Quote a CGL in seconds.", email-first lede, buttons **Get
   Appointed** (quotemako.com/register) + **Broker Login** (quotemako.com/login),
   the 20% commission line, and the compact "Forward the application" mailto
-  callout. No "Launch Mako" buttons anywhere. When Mako's own hero changes,
+  callout. No "Launch Mako" buttons anywhere, and no feature-card row in
+  the home band (removed 2026-09-25). When Mako's own hero changes,
   change the home band, the hero quick-box and mako.html together.
 - Mako facts come from the chutter-ai codebase, not assumption. Email-to-quote is
   `submit@quotemako.com`, must be sent from the broker's registered address,
