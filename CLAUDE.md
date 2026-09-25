@@ -217,6 +217,12 @@ reverts it.
   auto-quote, and do not mention referral classes at all.
 - Never invent a staff name, title or figure. The staff directory is at
   `S:\Public\Chutter Land\STAFF DIRECTORY.xlsx`.
+- Mako messaging mirrors the quotemako.com hero (2026-09-25, per Morgan):
+  headline "Quote a CGL in seconds.", email-first lede, buttons **Get
+  Appointed** (quotemako.com/register) + **Broker Login** (quotemako.com/login),
+  the 20% commission line, and the compact "Forward the application" mailto
+  callout. No "Launch Mako" buttons anywhere. When Mako's own hero changes,
+  change the home band, the hero quick-box and mako.html together.
 - Mako facts come from the chutter-ai codebase, not assumption. Email-to-quote is
   `submit@quotemako.com`, must be sent from the broker's registered address,
   accepts PDF / Word / `.msg` / images, reads the email body, and replies with a
