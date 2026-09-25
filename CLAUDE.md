@@ -156,6 +156,13 @@ morgan.chutter@gmail.com):
   "North Vancouver" listing seen elsewhere is a third-party directory, not
   Google's.
 
+Other TXT records at the root that must stay (2026-09-25):
+`anthropic-domain-verification-6xkwgs=E1Me7ZoLOZl4irtvFJEeUpf29` verifies
+chutteruw.com for the Chutter Claude Team organization (claude.ai admin
+settings > Organization and access > Domains; the verification page itself is
+hosted at setup.workos.com and reached via the "Verify a domain" button).
+Note the lowercase L in `OZl4`; reading it off a screenshot gets it wrong.
+
 Wix DNS panel gotcha: the domains page renders in a same-origin iframe and
 "Manage DNS records" is a button that navigates the iframe to
 `/my-domains/dns`; the direct `manage.wix.com/account/domains/<domain>/dns`
