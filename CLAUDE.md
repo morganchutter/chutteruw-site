@@ -155,6 +155,9 @@ morgan.chutter@gmail.com):
   321 Water Street, 420, Vancouver, BC V6B 1B8. Nothing was changed. Any
   "North Vancouver" listing seen elsewhere is a third-party directory, not
   Google's.
+- Search Console URL inspection: the direct `.../inspect?resource_id=...&id=...`
+  URL 404s. Use the "Inspect any URL" box at the top of the property, then
+  "Request indexing". Indexing of the home page was requested 2026-09-22.
 
 Other TXT records at the root that must stay (2026-09-25):
 `anthropic-domain-verification-6xkwgs=E1Me7ZoLOZl4irtvFJEeUpf29` verifies
@@ -217,7 +220,8 @@ reverts it.
   and millwrights are fine to name. Do not list referral classes as if they
   auto-quote, and do not mention referral classes at all.
 - Never invent a staff name, title or figure. The staff directory is at
-  `S:\Public\Chutter Land\STAFF DIRECTORY.xlsx`.
+  `S:\Public\Chutter Land\STAFF DIRECTORY.xlsx`. Ivan Yanchev's team card was
+  removed 2026-09-25 per Morgan; do not re-add him.
 - Mako messaging mirrors the quotemako.com hero (2026-09-25, per Morgan):
   headline "Quote a CGL in seconds.", email-first lede ("Mako reads it,
   underwrites the risk", never "classifies", per Morgan 2026-10-07), buttons **Get
@@ -230,6 +234,17 @@ reverts it.
   `submit@quotemako.com`, must be sent from the broker's registered address,
   accepts PDF / Word / `.msg` / images, reads the email body, and replies with a
   quote link or a referral confirmation in about a minute. No login needed.
+
+## Session notes
+
+- 2026-10-29: Remote Control switched on for the site chat (session
+  local_45e87c8c-d69a-4ea2-a54c-89527912155a) so Morgan can follow it from the
+  Claude mobile app; it resets if the session restarts.
+- 2026-11-06: compaction hooks live in `~/.claude/settings.json` (PreCompact
+  extract to `~/.claude/compaction-saves/`, SessionStart `compact` instruction
+  to re-read every app's CLAUDE.md in full, 500-line chunks, then fill gaps
+  here + in memory and commit). First real post-compaction run on this chat
+  was 2026-11-06 and the instruction appeared as designed.
 
 ## Source control
 
