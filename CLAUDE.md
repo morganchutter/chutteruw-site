@@ -219,7 +219,8 @@ reverts it.
 - Never invent a staff name, title or figure. The staff directory is at
   `S:\Public\Chutter Land\STAFF DIRECTORY.xlsx`.
 - Mako messaging mirrors the quotemako.com hero (2026-09-25, per Morgan):
-  headline "Quote a CGL in seconds.", email-first lede, buttons **Get
+  headline "Quote a CGL in seconds.", email-first lede ("Mako reads it,
+  underwrites the risk", never "classifies", per Morgan 2026-10-07), buttons **Get
   Appointed** (quotemako.com/register) + **Broker Login** (quotemako.com/login),
   the 20% commission line, and the compact "Forward the application" mailto
   callout. No "Launch Mako" buttons anywhere, and no feature-card row in
